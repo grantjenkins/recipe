@@ -8,24 +8,49 @@
     <title>Project Recipe Book</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     
     <style>
         header {
             background-color: rgb(69, 197, 214);
+            background-image: linear-gradient(45deg, transparent 20%, rgb(69, 197, 214) 25%, transparent 25%), linear-gradient(-45deg, transparent 20%, rgb(69, 197, 214) 25%, transparent 25%), linear-gradient(-45deg, transparent 75%, rgb(69, 197, 214) 80%, transparent 0);
+            background-size: 30px 30px, 30px 30px;
+            /*font-family: 'Aclonica', sans-serif;*/
+        }
+        
+        #profile-pic-brand {
+            width: 5rem;
+        }
+        
+        #profile-pic {
+            width: 20rem;
+        }
+        
+        #home .card-img-top {
+            /*width: 100%;*/
+            max-height: 15vw;
+            object-fit: cover;
+        }
+        
+        .signup-bar {
+            
         }
 
     </style>
 </head>
 <body class="d-flex flex-column h-100">
-    <header class="py-4">
+    <header class="py-4 bg-info">
         <div class="container">
-            <h1 class="display-4 text-light">Subscribe<small> for our recipes</small></h1>
+            <img id="profile-pic-brand" class="rounded-circle pull-left mr-4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Earl_Characture.jpg/692px-Earl_Characture.jpg">
+            <h1 class="display-4 text-light">Earl's<small> food for you</small></h1>
         </div>
     </header>
     <!--Global Navigation-->
     
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top mb-3">
-        <a class="navbar-brand" href="javascript:switchPage('#home');">NOM</a>
+        <a class="navbar-brand" href="javascript:switchPage('#home');">
+            Earl's
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon pt-1">
                 <i class="fa fa-bars" style="color:#ddd; font-size:24px;"></i>
@@ -54,6 +79,78 @@
     <!--Main Content (pages)-->
     <main role="main" class="flex-shrink-0">
         <div id="home" class="container page">
+        
+            <div class="container">
+            
+                <h2 class="text-secondary pb-2">Lastest Recipes</h2>
+            
+                <!-- Example row of columns -->
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/990402-ians-recipe-01-IMG_4724.jpg/640px-990402-ians-recipe-01-IMG_4724.jpg" class="card-img-top" alt="...">
+                        <div class="card-body"> <!-- bg-info text-light-->
+                            <h5 class="card-title">Crumbed Fish</h5>
+                            <p class="card-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Vermicelli-upma-recipe.jpg/640px-Vermicelli-upma-recipe.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Vermicelli upma</h5>
+                            <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Chicken-masala-Indian-curry-in-olive-oil.jpg/640px-Chicken-masala-Indian-curry-in-olive-oil.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Chicken Masala</h5>
+                            <p class="card-text">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                        </div>
+                    </div>
+                </div> <!--Latest Recipes-->
+                
+                <hr class="border mt-4">
+            
+                <div class="row py-4">
+                    <div class="col-9">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="col-3 py-3 bg-light text-dark">
+                        <strong>Check out our recipes</strong>
+                        <ul>
+                            <li>Favourites</li>
+                            <li>Newest</li>
+                            <li>Dinner</li>
+                            <li>Lunch</li>
+                            <li>Breakfast</li>
+                        </ul>
+                    </div>
+                </div> <!--Recipes + Info-->
+                
+                <div class="row py-2">
+                    <div class="col-12 signup-bar p-4 bg-info text-light rounded">
+                        <div class="mb-4">
+                            <strong class="pull-left ml-1" style="font-size: 1.5rem;">sign up for email updates</strong>
+                            <div class="pull-left ml-1 ml-sm-1 ml-md-2 mt-2 mb-3"> and get a free eCookbook.</div>
+                        </div>
+                        <form class="newsletter-signup mt-4" action="" method="post" id="home-newsletter" data-format="inline">
+                            <div class="input-group mb-3 ml-1">
+                                <input type="text" class="form-control" placeholder="Email address" aria-label="Email address" aria-describedby="signup-input">
+                                <div class="input-group-append">
+                                    <button class="btn bg-light text-dark" type="button" id="signup-button">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div> <!--Newsletter signup-->
+                
+            </div> <!--Home-->
+            
+        </div>
+        <div id="about" class="container page">
+            <h2>About Me</h2>
+            <img id="profile-pic" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Earl_Characture.jpg/692px-Earl_Characture.jpg">
             <p>AAAA</p>
             <p>XXXX</p>
             <p>XXXX</p>
@@ -75,9 +172,6 @@
             <p>XXXX</p>
             <p>XXXX</p>
         </div>
-        <div id="about" class="container page">
-            About
-        </div>
         <div id="recipes" class="container page">
             Recipes
         </div>
@@ -85,6 +179,12 @@
             Shop
         </div>
     </main>
+    
+    <footer class="footer mt-auto py-4 bg-light text-dark">
+        <div class="container p-4">
+            <h4>Earl's <small> food</small></h4>
+        </div>
+    </footer>
 
     <!--Script Imports-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
