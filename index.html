@@ -5,11 +5,409 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Project Recipe</title>
+    <title>new webpage</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=BenchNine&family=Dosis&family=Fredericka+the+Great&family=Handlee&family=Patrick+Hand&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    
+    <script>
+        var recipes = [
+            {
+                title: "Parmesan Crumbed Fish",
+                description: "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/990402-ians-recipe-01-IMG_4724.jpg/640px-990402-ians-recipe-01-IMG_4724.jpg",
+                category: "dinner",
+                tags: ["fish"],
+                ingredients: [
+                    "2 firm white fish fillets",
+                    "2 tbsp dijon mustard",
+                    "Olive oil spray",
+                    "Salt and pepper",
+                    "1/2 cup panko breadcrumbs",
+                    "1 tbsp parsley",
+                    "1/3 cup (30g) parmesan",
+                    "1 garlic clove",
+                    "1 tbsp olive oil",
+                    "Pinch of salt"
+                ],
+                instructions: [
+                    "Preheat grill / broiler on high",
+                    "Combine the Crumb ingredients and mix well to combine",
+                    "Sprinkle both sides of fish with salt and pepper, then spread the mustard on the top of each fillet (top only)",
+                    "Press the mustard smeared side of the fish into the crumb mixture. Press down firmly to make it stick. Then spray with oil (for extra golden crumb!)",
+                    "Drizzle 1/2 tbsp oil in a skillet and preheat on the stove over high heat.",
+                    "Once skillet is hot, place the fillets in the hot pan then place under the grill / broiler (about 15cm from the heat source) for 5 - 6 minutes until the crumb is golden and the fish is cooked, rotating as required. Fish should flake in centre once cooked.",
+                    "Oven option: bake at 220C/390F for 10 - 12 minutes, then finish under the grill/broiler on high to make the crumb golden.",
+                    "Serve immediately with lemon wedges!"
+                ]
+            },
+            {
+                title: "Vermicelli Noodle Salad",
+                description: "This is a refreshing Vermicelli Noodle Salad that is quick to make and super healthy at only 170 calories per serving!",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Vermicelli-upma-recipe.jpg/640px-Vermicelli-upma-recipe.jpg",
+                category: "dinner",
+                tags: ["salad", "asian"],
+                ingredients: [
+                    "100g / 4 oz dried vermicelli noodles",
+                    "2 cups white or green cabbage",
+                    "1 1/2 cups shredded carrot",
+                    "1 1/2 cups bean sprouts",
+                    "2 green onions",
+                    "1/2 cup coriander/ cilantro leaves",
+                    "2 tbsp light soy sauce",
+                    "2 tbsp rice wine vinegar",
+                    "1 1/2 tsp sugar",
+                    "1 1/2 tbsp grapeseed oil",
+                    "1 garlic clove",
+                    "1 birds eye chilli "
+                ],
+                instructions: [
+                    "Combine dressing ingredients in a jar and shake well to combine. Set aside for 5 minutes for the flavours to infuse.",
+                    "Prepare vermicelli noodles per packet directions (usually soak in warm or boiling water 2 minutes). Drain well then set aside for 10 minutes to drain off exces water. Turn out onto tea towel if necessary to dry more (watery noodles = watery flavour)",
+                    "Combine vermicelli noodles with remaining salad ingredients.",
+                    "Just prior to serving, toss through dressing. Garnish with Fried Asian Shallots if you wish."
+                ]
+            },
+            {
+                title: "Chicken Tikka Masala",
+                description: "A made-from-scratch Chicken Tikka Masala recipe with the signature yoghurt marinated chargrilled chicken smothered in an incredible spice infused curry sauce.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Chicken-masala-Indian-curry-in-olive-oil.jpg/640px-Chicken-masala-Indian-curry-in-olive-oil.jpg",
+                category: "dinner",
+                tags: ["chicken", "indian"],
+                ingredients: [
+                    "600g/ 1.2lb chicken thigh",
+                    "1/2 cup plain yoghurt",
+                    "6 cloves garlic",
+                    "1 tbsp fresh ginger",
+                    "1 tsp garam masala",
+                    "1 tsp each salt, cumin, ground coriander, paprika",
+                    "1 tbsp vegetable oil",
+                    "1/8 tsp cayenne pepper",
+                    "Pinch black pepper",
+                    "2 tsp lemon juice"
+                ],
+                instructions: [
+                    "Combine all ingredients except chicken in a bowl and mix. Add chicken and turn well to coat.",
+                    "Cover with cling wrap and leave in fridge to marinate overnight (3 hours minimum)",
+                    "Heat 1 tbsp oil in a non stick pan over high heat until smoking. Add half the chicken and spread out. Leave for 2 minutes or until charred. Turn each piece and cook the other side until charred - don't worry if not cooked inside. (Note 4, also Video helpful here) Remove into bowl.",
+                    "Scrape out charred bits left in pan and discard. Add more oil if required and cook remaining chicken."
+                ]
+            },
+            {
+                title: "Chicken Enchilada",
+                description: "Chicken Enchiladas made from scratch – juicy, cheesy and full of flavour! There’s a few components to homemade enchiladas, but it is absolutely worth the effort.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Chicken_Enchilada_%2815891630965%29.jpg/640px-Chicken_Enchilada_%2815891630965%29.jpg",
+                category: "lunch",
+                tags: ["chicken"],
+                ingredients: [
+                    "600g / 1.2lb chicken breast",
+                    "2 tbsp olive oil",
+                    "1/2 onion",
+                    "2 garlic cloves",
+                    "1 red capsicum/bell pepper",
+                    "400g / 14oz refried beans",
+                    "400g/14oz canned corn",
+                    "1/4 cup (65ml) water",
+                    "1 cup (100g) cheese"
+                ],
+                instructions: [
+                    "Drizzle 1 tbsp oil over chicken, mix to coat. Sprinkle with Seasoning, toss to coat.",
+                    "Heat remaining 1 tbsp oil in a large skillet over high heat. Add chicken, cook 2 minutes. Turn and cook 1.5 minutes. Remove, rest 2 minutes then chop.",
+                    "In the same skillet, add onion and garlic, cook 1 minute. Add capsicum, cook 2 minutes until onion is translucent.",
+                    "Add refried beans, diced chicken, corn and water. Stir and cook for 2 minutes until reduces slightly. Should be thick and juicy, not watery."
+                ]
+            },
+            {
+                title: "Zucchini and Pesto Orzo",
+                description: "There’s lots of hidden greens in this Pea, Zucchini and Pesto Orzo. It’s a complete meal and only takes 15 minutes to make.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Zucchini-corn-dalia-recipe.jpg/640px-Zucchini-corn-dalia-recipe.jpg",
+                category: "lunch",
+                tags: ["zucchini"],
+                ingredients: [
+                    "2/3 cup risoni",
+                    "1 tbsp olive oil",
+                    "2 1/2 tbsp basil pesto",
+                    "1 small onion",
+                    "1 garlic clove",
+                    "3 cups zucchini",
+                    "1 cup frozen peas",
+                    "1/4 tsp salt",
+                    "Black pepper",
+                    "Parmesan cheese"
+                ],
+                instructions: [
+                    "Place about 8 cups of water in a large saucepan and bring to boil.",
+                    "Add risoni and cook for 4 minutes, then add peas and cook for a further 1 minute. Note: The risoni will be slightly underdone at this point. It will finish cooking in the remaining steps.",
+                    "Scoop out 1/2 cup of the water from the saucepan, then drain the risoni and set aside until ready to add to the pan.",
+                    "Heat olive oil in a fry pan over medium high heat.",
+                    "Add garlic and onion and sauté for 1 minute until starting to soften.",
+                    "Add zucchini and sauté for a further 2 - 3 minutes until both the zucchini and onion are softened and the onion is starting to turn a light golden brown.",
+                    "Add pesto, risoni, pasta water reserved in step 3, salt and pepper. Bring the water to a simmer and stir for 1 minute until the water is absorbed.",
+                    "Serve immediately, garnished with freshly grated parmesan."
+                ]
+            },
+            {
+                title: "Prosciutto Wrapped Chicken with Scalloped Potatoes",
+                description: "The tasty juices from the chicken mingles with the salty prosciutto as it drips onto the potato. It’s like potato gratin made with the best chicken broth ever!",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Aloo_chat_Recipe.JPG/640px-Aloo_chat_Recipe.JPG",
+                category: "dinner",
+                tags: ["chicken", "potato"],
+                ingredients: [
+                    "4 chicken thigh fillets",
+                    "4 long or 8 small thin slices of prosciutto",
+                    "1.5 lb / 750 g potatoes",
+                    "1 garlic clove",
+                    "1 1/2 tbsp olive oil + 1/2 tbsp extra olive oil",
+                    "1 tsp dried thyme leaves",
+                    "1/4 cup freshly grated parmesan",
+                    "Salt and pepper"
+                ],
+                instructions: [
+                    "Preheat oven to 180C/350F.",
+                    "Mix together the Ricotta Filling ingredients in a small bowl.",
+                    "Lay out the prosciutto on a work surface. Place chicken lengthwise at the bottom of each strip.",
+                    "Divide Ricotta Filling between the chicken, placing it at the bottom.",
+                    "Roll up the chicken, wrapping it in the prosciutto, finishing with the seam side down. Not too tightly otherwise the ricotta will ooze out!",
+                    "Use toothpicks to seal the ends.",
+                    "Spread the potato slices on the base of a roasting dish or large ovenproof skillet. Fan them out so they are overlapping slightly.",
+                    "Mix together 1 1/2 tbsp olive oil and garlic then pour over the potatoes, using a teaspoon or brush to spread it out. Sprinkle with salt and pepper and thyme leaves.",
+                    "Place chicken on top of the potato, drizzle the chicken with 1/2 tbsp olive oil and bake for 40 minutes.",
+                    "Remove chicken onto a plate to rest, covered loosely with foil.",
+                    "Sprinkle the potatoes with parmesan cheese, then return just the potatoes back into the oven and turn up the oven to maximum. Bake for 5 minutes.",
+                    "Remove potatoes from the oven. Place chicken back on top.",
+                    "Serve asap!"
+                ]
+            },
+            {
+                title: "Indian Style Salsa",
+                description: "Fat free, full of flavour, and utterly addictive, this is a restaurant style salsa that’s the perfect consistency for scooping up with corn chips. Or go super healthy and serve it with crudités!",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Indian-Salsa-dip-mother%27s-recipe.jpg/640px-Indian-Salsa-dip-mother%27s-recipe.jpg",
+                category: "dinner",
+                tags: ["indian", "salsa"],
+                ingredients: [
+                    "1/4 cup chopped onion",
+                    "1 tbsp jalapeño pepper",
+                    "400g / 14 oz canned crushed tomato",
+                    "4 oz / 120g canned diced green chiles",
+                    "1/4 cup (packed) cilantro/coriander",
+                    "1/2 tbsp+ lime juice",
+                    "1 clove garlic",
+                    "1/2 tsp sugar",
+                    "1/2 tsp salt",
+                    "1/4 tsp black pepper",
+                    "1/4 teaspoon ground cumin"
+                ],
+                instructions: [
+                    "Place onion and jalapeno in the food processor first, then add remaining ingredients (start with 1/2 tbsp lime juice).",
+                    "Blitz to desired consistency - I like mine pretty smooth because you get better flavour out of the onion etc.",
+                    "Taste test with corn chip for salt and lime. Adjust if necessary.",
+                    "Refrigerate 1 hour before serving with corn chips, or other dippers."
+                ]
+            },
+            {
+                title: "Thai Green Curry",
+                description: "Thai Green Curry in 30 minutes made by freshening up store bought curry paste OR with a homemade green curry paste! Whichever way you go, the one essential step to make a really great green curry is to fry off the curry paste.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Mirch_Pakora.JPG/640px-Mirch_Pakora.JPG",
+                category: "dinner",
+                tags: ["thai", "curry"],
+                ingredients: [
+                    "2 tbsp vegetable oil",
+                    "1 cup (250ml) chicken or vegetable broth, low sodium",
+                    "400 g/14oz coconut milk",
+                    "1 - 3 tsp fish sauce",
+                    "1 - 3 tsp white sugar",
+                    "1/8 tsp salt",
+                    "6 kaffir lime leaves",
+                    "350 g/12 oz chicken thigh",
+                    "2 Japanese eggplants",
+                    "1 1/2 cups snow peas",
+                    "16 Thai basil leaves",
+                    "Juice of 1/2 lime"
+                ],
+                instructions: [
+                    "Heat oil in a heavy based skillet or pot over medium high heat.",
+                    "Add curry paste (and garlic, ginger and lemongrass Extras, if using) and cook for 2 to 3 minutes until it mostly dries out",
+                    "Add chicken broth and coconut milk, mix to dissolve paste.",
+                    "Curry in a jar seasonings: Add 1 tsp fish sauce, 1 tsp sugar, no salt.",
+                    "Add kaffir lime leaves. Mix then bring to simmer.",
+                    "Add chicken, stir then lower heat to medium so it's bubbling gently. Cook 7 minutes.",
+                    "Add eggplants, cook 5 minutes until soft.",
+                    "Taste sauce. Add fish sauce or salt for more saltiness, sugar for sweetness.",
+                    "Add snow peas, cook 2 minutes until a bit softened, then stir through basil and lime juice. Sauce should have reduced but will still be a be on the thin side, not thick - that's how it's should be. DO NOT keep simmering - sauce will darken.",
+                    "Serve curry over jasmine rice with garnishes of choice."
+                ]
+            },
+            {
+                title: "Roasted Cauliflower Salad",
+                description: "Take the humble cauliflower to a new level with this divine easy Roasted Cauliflower Salad with Crunchy Bread Chunks and Celery. Inspired by a recipe from Yotam Ottolenghi.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Aloo-ghobhi-sabji.jpg/640px-Aloo-ghobhi-sabji.jpg",
+                category: "lunch",
+                tags: ["cauliflower", "salad"],
+                ingredients: [
+                    "1/2 head large cauliflower",
+                    "3 tbsp olive oil",
+                    "1 tsp salt",
+                    "pepper",
+                    "2 cups torn large chunks of bread",
+                    "Handful parsley leaves",
+                    "1 celery stalk",
+                    "1/2 tsp sumac"
+                ],
+                instructions: [
+                    "Preheat oven to 350F/180C.",
+                    "Break cauliflower into medium size florets (not too small), use a knife to cut the larger pieces.",
+                    "Toss with 2 tbsp olive oil, salt and pepper, spread on baking tray and roast for 20 to 25 minutes, until cauliflower is lightly browned.",
+                    "Remove tray, move cauliflower to one side (on the tray). Put the bread in a pile, drizzle 1tbsp olive oil and use your fingers to coat.",
+                    "Spread out the bread and return the tray to the oven for 3 minutes, until bread is golden.",
+                    "Combine the cauliflower, parsley and celery in a bowl, toss with dressing.",
+                    "Lastly, add the bread and toss to combine, then scatter a pinch of sumac over the top.",
+                    "Serve warm or at room temperature."
+                ]
+            },
+            {
+                title: "Matcha breakfast bowl",
+                description: "The cake is fudgy and moist, and the sauce is rich and indulgent, just like a homemade caramel sauce. This recipe is the butterscotch version of everybody’s favourite Chocolate Self Saucing Pudding. Just as quick, just as easy, just as loved!",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Matcha_breakfast_bowl_%2843779468972%29.jpg/640px-Matcha_breakfast_bowl_%2843779468972%29.jpg",
+                category: "breakfast",
+                tags: ["banana"],
+                ingredients: [
+                    "1/4 cup (50g) dark brown sugar",
+                    "1 1/4 cup (185g) plain flour",
+                    "2.5 tsp baking powder",
+                    "100g / 7 tbsp unsalted butter",
+                    "1 egg",
+                    "1/2 cup (125ml) milk",
+                    "4 tbsp golden syrup"
+                ],
+                instructions: [
+                    "Preheat oven to 180°C/350°F (160°C fan).",
+                    "Grease a 6 cup baking dish (1.6L/1.6Q) with butter.",
+                    "Add butter, egg, milk and golden syrup. Whisk until mostly lump free.",
+                    "Scrape into baking dish and smooth surface.",
+                    "Pour boiling water over the surface over the back of a dessert spoon held as close to the batter as you can (to soften the pour so it doesn't break the surface of the batter).",
+                    "Transfer to oven, bake 40 minutes or until skewer inserted into the cake part comes out clean.",
+                    "Cut through pudding to reveal butterscotch sauce underneath.",
+                    "To serve, scoop pudding into a bowl then douse with butterscotch sauce. Top with ice cream!"
+                ]
+            },
+            {
+                title: "Aloo Paratha",
+                description: "Here’s something different you can make with leftover potato that is really easy to make! Aloo Paratha is a potato stuffed flatbread that is a popular dish in India.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Onion_Corriander_Paratha.JPG/640px-Onion_Corriander_Paratha.JPG",
+                category: "breakfast",
+                tags: ["potato", "india"],
+                ingredients: [
+                    "2 1/2 cups plain white flour",
+                    "1 tsp salt",
+                    "1 cup water",
+                    "2 tbsp vegetable oil",
+                    "1 1/2 cups mashed potato",
+                    "1/2 cup shallots/scallions",
+                    "2 tbsp fresh coriander/cilantro",
+                    "1/2 tsp fresh ginger",
+                    "1 tsp Garam Masala",
+                    "1/4 tsp chili powder"
+                ],
+                instructions: [
+                    "Place the flour, water and salt in a bowl. Use a table knife to mix the ingredients together, then use your hands.",
+                    "Once the dough is sort of formed, turn it out onto a work surface and knead it 60 times. It should be smooth and elastic, not sticky or crumbly.",
+                    "Form the dough into a ball, cover with cling wrap and set aside for at least 20 minutes.",
+                    "Preheat oven to very low (to keep Parathas warm because you can only cook one at a time).",
+                    "Turn the Paratha over and cook the other side for 1 minute 30 seconds.",
+                    "Remove from fry pan onto a wire rack (this stops the underside from going soggy due to sweat) and place into a low oven to keep warm while you cook the remaining Parathas.",
+                    "Add a small drizzle of the remaining oil into the pan (you should not need much). Proceed to cook the remaining Parathas.",
+                    "Cut into 4 pieces and serve immediately. It can be served with chutney or yoghurt on the side. I find that the Filling has so much flavour that it doesn't need anything on the side."
+                ]
+            },
+            {
+                title: "Japanese GYOZA (Dumplings)",
+                description: "This Japanese Gyoza recipe is my mothers’, and it’s a traditional, authentic recipe. Juicy on the inside, a golden brown and crispy base, these are made in a skillet and are one of my all time favourite Japanese dishes!",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Akara.jpg/640px-Akara.jpg",
+                category: "lunch",
+                tags: ["dumpling", "japan"],
+                ingredients: [
+                    "1 1/2 cups green cabbage, very finely chopped",
+                    "1 tsp salt, separated",
+                    "1 lb / 500g ground pork (mince) (fattier the better)",
+                    "1 cup garlic chives, finely chopped",
+                    "1 garlic cloves, crushed",
+                    "1 tsp ginger, grated",
+                    "1 tsp sesame oil",
+                    "1 tbsp cornstarch / corn flour",
+                    "2 tsp soy sauce"
+                ],
+                instructions: [
+                    "Combine cabbage and 1/2 tsp salt in a small bowl, then set aside for 20 minutes to allow the cabbage to wilt slightly.",
+                    "Place remaining Filling ingredients (including remaining 1/2 tsp salt) in a large bowl. Squeeze out any excess water from the cabbage and add to the bowl.",
+                    "Sprinkle a baking tray with 1 tsp of cornstarch / cornflour.",
+                    "Place 1 gyoza wrapper on your palm (left hand for right-handed people). Dip your finger in water and run it around the edge of half the gyoza wrapper (to seal).",
+                    "Heat 1 tbsp oil in a large skillet (that has a lid) over medium high heat.",
+                    "Cook until the water has completely evaporated (so the golden underside is not wet and soggy) and the wrapper is slightly translucent on top - about 3 to 4 minutes.",
+                    "Use an egg flip to transfer onto a plate upside down i.e. golden side up.",
+                    "Serve with Dipping Sauce."
+                ]
+            },
+            {
+                title: "Flaounes halved",
+                description: "This EASY Cinnamon recipe is made with no yeast. It smells so divine when it’s in the oven, there’s only one thing that can top it: that moment when you cut yourself a thick slice while it’s still warm, slather it with butter and take that first bite.",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Flaounes_halved.jpg/640px-Flaounes_halved.jpg",
+                category: "breakfast",
+                tags: ["bread", "cinnamon"],
+                ingredients: [
+                    "2 1/2 cups / 375g plain flour (all purpose flour)",
+                    "1 cup / 220g white sugar",
+                    "1 1/2 tsp baking powder",
+                    "1 tsp baking soda",
+                    "3 eggs",
+                    "1/2 cup / 125 ml vegetable oil",
+                    "1 1/3 cups / 290g sour cream",
+                    "2 tsp vanilla extract"
+                ],
+                instructions: [
+                    "Preheat oven to 180C/350F (all oven types).",
+                    "Place Dry Ingredients in a bowl and whisk to combine.",
+                    "Place Wet Ingredients in a separate bowl and whisk until combined.",
+                    "Make a well in the Dry Ingredients bowl. Pour in Wet Ingredients, then mix 12 - 15 times until just combined.",
+                    "Spoon about 1/4 of the batter into the tin (about 1.5cm / 3/5' deep) and smooth surface.",
+                    "Dollop about 1/3 of the Cinnamon Sugar over the batter.",
+                    "Bake uncovered for 45 minutes. Then remove and cover with foil, and bake for a further 20 minutes or until a skewer inserted into the middle comes out clean.",
+                    "Stand in the tin for 5 minutes before lifting it out onto a cooling rack. Allow to cool before slicing (can still be warm but don't slice while hot, may crumble). Moist and flavoursome enough to eat plain but a little extra butter doesn't hurt!"
+                ]
+            },
+            {
+                title: "Thai Red Curry with Chicken",
+                description: "Thai Red Curry – everything we know and love about Thai food! Big, bold Thai flavours, beautifully fragrant, the creamy red curry sauce is so good you can put anything in it and it will be amazing!",
+                image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Handi-chicken-recipe.jpg/640px-Handi-chicken-recipe.jpg",
+                category: "dinner",
+                tags: ["chicken", "curry", "thai"],
+                ingredients: [
+                    "5 - 6 tbsp Thai Red Curry Paste",
+                    "3 tbsp vegetable oil",
+                    "1 cup (250 ml) chicken broth/stock",
+                    "400 ml / 14 oz coconut milk",
+                    "6 kaffir lime leaves",
+                    "1 tbsp sugar",
+                    "350g / 12 oz chicken thighs",
+                    "150g / 5 oz pumpkin or butternut squash",
+                    "120g / 4oz green beans",
+                    "12 Thai basil leaves"
+                ],
+                instructions: [
+                    "Heat oil in a large heavy based skillet over medium high heat.",
+                    "Add curry paste and Extras (if using jar paste) and cook for about 2 minutes so it dries out.",
+                    "Add chicken broth and stir to dissolve paste. Simmer rapidly for 3 minutes or until liquid reduces by half.",
+                    "Add coconut milk, lime leaves, sugar and fish sauce. Stir, then add chicken.",
+                    "Do a taste test. Add more fish sauce (or even shrimp paste) to add more saltiness, sugar for sweetness.",
+                    "Add pumpkin and beans, stir. Cook for 3 minutes or until pumpkin is just cooked through and Sauce is thickened.",
+                    "Remove from heat. Stir through a handful of Thai basil leaves.",
+                    "Serve over jasmine rice, garnished with fresh red chilli slices and fresh coriander/cilantro leaves, if desired."
+                ]
+            }
+        ];
+        
+        var tagsArr = [], categoriesArr = [];
+    </script>
     
     <style>
         body {
@@ -17,7 +415,6 @@
             /*font-family: 'Shadows Into Light', cursive;
             font-family: 'Shadows Into Light Two', cursive;
             font-family: 'Fredericka the Great', cursive;*/
-
         }
         
         header {
@@ -49,7 +446,7 @@
             width: 20rem;
         }
         
-        #home .card-img-top {
+        #home .card-img-top, #recipes .card-img-top {
             max-height: 15vw;
             object-fit: cover;
         }
@@ -66,6 +463,13 @@
 
         #spunky-sam {
             font-family: 'Dosis',sans-serif;
+        }
+        
+        #hoe-recipe-grid-categories a.active,
+        #recipe-grid-categories a.active,
+        #recipe-grid-tags a.active{
+            background-color: var(--info) !important;
+            color: var(--light) !important;
         }
 
     </style>
@@ -104,9 +508,9 @@
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <div class="input-group">
-                        <input type="search" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <input id="searchInput" type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button">
                         <div class="input-group-append">
-                            <button class="btn bg-info text-light" type="button" id="search-button">&raquo;</button>
+                            <button class="btn bg-info text-light" type="submit" formaction="javascript:searchRecipes();" id="search-button">&raquo;</button>
                         </div>
                     </div>
                 </form>
@@ -162,26 +566,9 @@
                 </div> <!--About Earl-->
                 
                 <div class="col-12 col-sm-4">
-                    <h5 class="text-info pl-1">Recipies</h5>
+                    <h5 class="text-info pl-1">Recipes</h5>
                     <div class="px-1 mb-2">
-                        <div class="list-group my-2">
-                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-2 bg-light text-dark mb-1 border-0">
-                                Breakfast
-                                <span class="badge badge-info badge-pill">14</span>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-2 bg-light text-dark mb-1 border-0">
-                                Lunch
-                                <span class="badge badge-info badge-pill">18</span>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-2 bg-light text-dark mb-1 border-0">
-                                Entree
-                                <span class="badge badge-info badge-pill">8</span>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-2 bg-light text-dark mb-1 border-0">
-                                Dinner
-                                <span class="badge badge-info badge-pill">19</span>
-                            </a>
-                        </div>
+                        <div id="home-recipe-grid-categories" class="list-group my-2"></div>
                     </div>
 
                 </div> <!--Recipe Links-->
@@ -270,6 +657,18 @@
         
         <div id="recipes" class="container page">
             <h2 class="text-info">Recipes</h2>
+            
+            <div class="row">
+                <div class="col-8 col-lg-9">
+                    <div id="recipe-grid" class="row row-cols-1 row-cols-sm-2 row-cols-lg-3"></div>
+                </div>
+                <div class="col-4 col-lg-3">
+                    <h3>Type</h3>
+                    <div id="recipe-grid-categories" class="list-group my-2"></div>
+                    <h3>Tags</h3>
+                    <div id="recipe-grid-tags" class="list-group my-2"></div>
+                </div>
+            </div>
         </div> <!--Recipes Page-->
         
         <div id="shop" class="container page">
@@ -339,12 +738,15 @@
 			$(".page").removeClass('showPage');
             $(page).addClass('showPage');
             
+            currentPage = page;
+            
             gotoTop();
 		};
 		
 		//Display the home page when the site loads
-		switchPage('#home');
+		switchPage('#recipes');
 		
+		/*
         $(document).ready(function(){
             //cross browser solution for smooth scrolling
             $('.scroll-To-Top').click(function(){
@@ -352,6 +754,169 @@
                 return false;
             });
         });
+        */
     </script>
+    
+    <script>
+    
+        var currentPage = "#home";
+        var recipeCategory = "";
+        var recipeTag = "";
+        var recipeCriteria = "";
+        
+        function setCategory(category) {
+            recipeCategory = category || "";
+        }
+        
+        function setTag(tag) {
+            recipeTag = tag || "";
+        }
+        
+        function setCriteria(criteria) {
+            recipeCriteria = criteria || "";
+        }
+        
+        function loadRecipesTagsCagories() {
+            let output = "";
+            
+            recipes.forEach(function(recipe) {
+                //Tags    
+                recipe.tags.forEach(function(tag) {
+                    var t = tagsArr.find(function(item) {return item.title === tag});
+
+                    if(t) {
+                        t.n+= 1;
+                    }
+                    else {
+                        tagsArr.push({
+                            title: tag,
+                            n: 1
+                        });
+                    }
+                })
+                
+                //Categories
+                var c = categoriesArr.find(function(item) {return item.title === recipe.category});
+
+                if(c) {
+                    c.n+= 1;
+                }
+                else {
+                    categoriesArr.push({
+                        title: recipe.category,
+                        n: 1
+                    });
+                }
+            })
+            
+            //Categories
+            
+            $("#home-recipe-grid-categories").empty();
+            $("#recipe-grid-categories").empty();
+            
+            output = '';
+            output = '<a href="javascript:setCategory(\'\');loadRecipes();" class="list-group-item list-group-item-action active d-flex justify-content-between align-items-center px-2 bg-light text-dark mb-1 border-0">' +
+                            'all' +
+                        '</a>';
+            
+            categoriesArr.forEach(function(cat) {
+                output+= '<a href="javascript:setCategory(\'' + cat.title + '\');loadRecipes();" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-2 bg-light text-dark mb-1 border-0">' +
+                            cat.title +
+                            '<span class="badge badge-info badge-pill">' + cat.n + '</span>' +
+                        '</a>';
+            })
+            
+            $("#home-recipe-grid-categories").append(output);
+            $("#recipe-grid-categories").append(output);
+            
+            //Tags
+            
+            $("#recipe-grid-tags").empty();
+            
+            output = '<a href="javascript:setTag(\'\');loadRecipes();" class="list-group-item list-group-item-action active d-flex justify-content-between align-items-center px-2 bg-light text-dark mb-1 border-0">' +
+                            'all' +
+                        '</a>';
+            
+            tagsArr.forEach(function(tag) {
+                output+= '<a href="javascript:setTag(\'' + tag.title + '\');loadRecipes();" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center px-2 bg-light text-dark mb-1 border-0"">' +
+                            tag.title +
+                            '<span class="badge badge-info badge-pill">' + tag.n + '</span>' +
+                        '</a>';
+            })
+            
+            $("#recipe-grid-tags").append(output);
+        }
+        loadRecipesTagsCagories();
+    
+        function loadRecipes() {
+            let output = "";
+            $("#recipe-grid").empty();
+            
+            let searchArr = recipeCriteria.toLowerCase().split(' ');
+            
+            recipes.forEach(function(recipe) {
+                
+                if(!recipeCategory || recipeCategory === "" || recipe.category === recipeCategory) {
+                    
+                    if(!recipeTag || recipeTag === "" || recipe.tags.includes(recipeTag)) {
+                        
+                        if (searchArr.some(function(v) { return (recipe.title.toLowerCase() + " " + recipe.description.toLowerCase()).indexOf(v) >= 0; })) {
+                
+                            var tags = "";
+                            recipe.tags.forEach(function(tag) {
+                                tags+= '<span class="badge badge-pill badge-info mr-2 px-2 py-1">' + tag + '</span>';
+                            })
+                            
+                            output+= '<div class="col mb-4">' +
+                                        '<div class="card h-100">' +
+                                            '<img src="' + recipe.image + '" class="card-img-top" alt="' + recipe.title + '">' +
+                                            '<div class="card-body">' +
+                                                '<h6 class="card-title mb-0">' + recipe.title + '</h6>' +
+                                                //'<p class="card-text">' + tags + '</p>' +
+                                            '</div>' +
+                                            
+                                            '<div class="card-footer">' +
+                                                '<span class="text-muted">' + tags + '</span>' +
+                                            '</div>' +
+                                            
+                                        '</div>' +
+                                    '</div>';
+                        }
+                    }        
+                }
+            })
+
+            $("#recipe-grid").append(output);
+        }
+        
+        //setCategory("breakfast");
+        loadRecipes();
+        
+        function searchRecipes() {
+            recipeCriteria = document.getElementById("searchInput").value;
+            loadRecipes();
+            if(currentPage !== "#recipes") {
+                switchPage('#recipes');
+            }
+        }
+        
+        //handle setting active links
+        $('#home-recipe-grid-categories a').on('click', function () {
+            $('#home-recipe-grid-categories').find('a.active').removeClass('active');
+            $(this).addClass('active');
+        });
+        
+        $('#recipe-grid-categories a').on('click', function () {
+            $('#recipe-grid-categories').find('a.active').removeClass('active');
+            $(this).addClass('active');
+        });
+        
+        $('#recipe-grid-tags a').on('click', function () {
+            $('#recipe-grid-tags').find('a.active').removeClass('active');
+            $(this).addClass('active');
+        });
+        
+    </script>
+    
 </body>
 </html>
